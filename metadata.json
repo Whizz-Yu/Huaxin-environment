@@ -1,0 +1,6 @@
+{
+  "name": "华新禄劝水泥智慧环保管理系统",
+  "description": "基于GIS一张图、三维虚拟管控、有组织排放监测、无组织排放管控、清洁运输台账及智能决策分析的水泥企业超低排放智慧环保一体化管理平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

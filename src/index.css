@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Share Tech Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --color-cyber-blue: #0ea5e9;
+  --color-cyber-neon: #22d3ee;
+  --color-cyber-green: #10b981;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.35);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.animate-scanline {
+  animation: scanline 6s linear infinite;
+}
+
+/* Custom cyber scrollbar colors */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.4);
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.7);
+}
+
+/* Cyber card borders */
+.cyber-panel {
+  position: relative;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  background: rgba(8, 17, 34, 0.85);
+  box-shadow: 0 0 15px rgba(0, 165, 233, 0.1) inset, 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.cyber-panel-header {
+  border-bottom: 1px solid rgba(14, 165, 233, 0.35);
+  background: linear-gradient(90deg, rgba(14, 165, 233, 0.15) 0%, rgba(14, 165, 233, 0) 100%);
+}
+
+.cyber-badge {
+  background: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  color: #22d3ee;
+}
